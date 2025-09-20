@@ -1,0 +1,41 @@
+import numpy as np 
+import json  # 读取基站位置文件
+from Lib.trilateration import solve_position_3d  # 导入lib 中的三边定位算法
+
+def load_anchors(UwbConfig_path="../UwbConfig/anchors.json"):#读取基站配置文件，返回 numpy 数组 (N,3) 方便后面快速运算
+    with open(config_path, "r") as f:
+        data = json.load(f)
+    anchorslist= []
+    for a in data["anchors"]: #遍历anchors 里面的所有坐标信息 转为 np 数组方便运算
+        anchorslist.append([a["x"], a["y"], a["z"]])
+    anchors = np.array(anchorslist, dtype=float)
+    return anchors
+
+def simulate_ranges(anchors, true_pos, noise_std=50.0):#模拟 UWB 测距（单位 mm 并且加入高斯噪声
+    dists = np.linalg.norm(anchors - true_pos, axis=1)
+    noise = np.random.normal(0, noise_std, size=dists.shape)
+    return dists + noise
+
+def main():
+    # 1. 读取基站配置
+    anchors = load_anchors()
+    print("Loaded anchors:\n", anchors)
+
+    # 2. 定义无人机真实位置（单位 mm）
+    true_pos = np.array([10000.0, 1000.0, 1000.0])  # (x,y,z)
+    print("True position:", true_pos)
+
+    # 3. 模拟测距
+    ranges = simulate_ranges(anchors, true_pos)
+    print("Simulated ranges (mm):", ranges)
+
+    # 4. 调用三边定位算法
+    est_pos = solve_position_3d(anchors, ranges)
+    print("Estimated position:", est_pos)
+
+    # 5. 计算误差
+    error = np.linalg.norm(est_pos - true_pos)
+    print(f"定位误差: {error:.2f} mm")
+
+if __name__ == "__main__":
+    main()
