@@ -15,7 +15,7 @@ def solve_position_3d(anchors, ranges, initial=None, enforce_positive_z=True):
     anchors = np.asarray(anchors, dtype=float)  # 确保基站坐标为 float 数组
     ranges = np.asarray(ranges, dtype=float)    # 确保测距为 float 数组
     if initial is None:
-        initial = anchors.mean(axis=0) + np.array([0, 0, 1000])  # 初始猜测为000 即为一号基站基站，z 偏高 1 米
+        initial = np.array([10000.0, 1000.0, 1000.0])  # 给一个安全的初始猜测 # 初始猜测为000 即为一号基站基站，z 偏高 1 米
         initial[2] = min(max(initial[2], 0), 6000)  # 强制 z 在 [0,6000] 内 否则下面的 bound 中会因为相加后超过 不在范围内报错
     res = least_squares(residuals_3d,initial,args=(anchors, ranges),method='trf',
     bounds=([None, None, 0.0],   #下限，z ≥ 0
