@@ -12,7 +12,9 @@ def load_anchors(UwbConfig_path="/home/rsp/UwbProject/UwbConfig/anchors.json"):#
     return anchors
 
 def simulate_ranges(anchors, true_pos, noise_std=100.0):
-    """模拟UWB 测距 并且加入高斯噪声10cm的偏移 这是为了应对实际上的无人机室内漂移的问题"""
+    """模拟UWB 测距 并且加入高斯噪声10cm的偏移 
+    在这里可以抵消掉部分实际上的无人机室内漂移的问题 但还是不完善的 
+    如果后期专利的包络面算法引入会有更好的优化空间 会有更好的结果"""
     dists = np.linalg.norm(anchors - true_pos, axis=1)
     noise = np.random.normal(0, noise_std, size=dists.shape) #噪声生成的参数 0 均值 10cm 标准差 形状和 dist 一样
     return dists + noise
