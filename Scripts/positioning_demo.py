@@ -2,7 +2,7 @@ import numpy as np
 import json  # 读取基站位置文件
 from Lib.trilateration import solve_position_3d  # 导入lib 中的三边定位算法
 
-def load_anchors(UwbConfig_path="../UwbConfig/anchors.json"):#读取基站配置文件，返回 numpy 数组 (N,3) 方便后面快速运算
+def load_anchors(UwbConfig_path="/home/rsp/UwbProject/UwbConfig/anchors.json"):#读取基站配置文件，返回 numpy 数组 (N,3) 方便后面快速运算
     with open(UwbConfig_path, "r") as f:
         data = json.load(f)
     anchorslist= []
