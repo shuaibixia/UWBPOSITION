@@ -11,29 +11,30 @@ def load_anchors(UwbConfig_path="../UwbConfig/anchors.json"):#读取基站配置
     anchors = np.array(anchorslist, dtype=float)
     return anchors
 
-def simulate_ranges(anchors, true_pos, noise_std=50.0):#模拟 UWB 测距（单位 mm 并且加入高斯噪声
+def simulate_ranges(anchors, true_pos, noise_std=100.0):
+"""模拟UWB 测距 并且加入高斯噪声10cm的偏移 这是为了应对实际上的无人机室内漂移的问题"""
     dists = np.linalg.norm(anchors - true_pos, axis=1)
-    noise = np.random.normal(0, noise_std, size=dists.shape)
+    noise = np.random.normal(0, noise_std, size=dists.shape) #噪声生成的参数 0 均值 10cm 标准差 形状和 dist 一样
     return dists + noise
 
 def main():
-    # 1. 读取基站配置
+    #读取基站配置
     anchors = load_anchors()
     print("Loaded anchors:\n", anchors)
 
-    # 2. 定义无人机真实位置（单位 mm）
+    #定义无人机真实位置（单位 mm）
     true_pos = np.array([10000.0, 1000.0, 1000.0])  # (x,y,z)
     print("True position:", true_pos)
 
-    # 3. 模拟测距
+    #模拟测距
     ranges = simulate_ranges(anchors, true_pos)
     print("Simulated ranges (mm):", ranges)
 
-    # 4. 调用三边定位算法
+    #调用三边定位算法
     est_pos = solve_position_3d(anchors, ranges)
     print("Estimated position:", est_pos)
 
-    # 5. 计算误差
+    #计算误差
     error = np.linalg.norm(est_pos - true_pos)
     print(f"定位误差: {error:.2f} mm")
 
