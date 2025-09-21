@@ -22,7 +22,7 @@ def main():
     anchors = load_anchors()
     print("Loaded anchors:\n", anchors)
 
-    #定义无人机真实位置（单位 mm）
+    #定义无人机真实位置（单位 mm） """后期这里直接输入 UWB 基站的实际参数 接受存在 DATA 的数据以及在 lib 中的处理函数传进来就好 """
     true_pos = np.array([10000.0, 1000.0, 1000.0])  # (x,y,z)
     print("True position:", true_pos)
 
