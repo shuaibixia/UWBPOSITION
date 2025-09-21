@@ -3,7 +3,7 @@ import json  # 读取基站位置文件
 from Lib.trilateration import solve_position_3d  # 导入lib 中的三边定位算法
 
 def load_anchors(UwbConfig_path="../UwbConfig/anchors.json"):#读取基站配置文件，返回 numpy 数组 (N,3) 方便后面快速运算
-    with open(config_path, "r") as f:
+    with open(UwbConfig_path, "r") as f:
         data = json.load(f)
     anchorslist= []
     for a in data["anchors"]: #遍历anchors 里面的所有坐标信息 转为 np 数组方便运算
@@ -12,7 +12,7 @@ def load_anchors(UwbConfig_path="../UwbConfig/anchors.json"):#读取基站配置
     return anchors
 
 def simulate_ranges(anchors, true_pos, noise_std=100.0):
-"""模拟UWB 测距 并且加入高斯噪声10cm的偏移 这是为了应对实际上的无人机室内漂移的问题"""
+    """模拟UWB 测距 并且加入高斯噪声10cm的偏移 这是为了应对实际上的无人机室内漂移的问题"""
     dists = np.linalg.norm(anchors - true_pos, axis=1)
     noise = np.random.normal(0, noise_std, size=dists.shape) #噪声生成的参数 0 均值 10cm 标准差 形状和 dist 一样
     return dists + noise
