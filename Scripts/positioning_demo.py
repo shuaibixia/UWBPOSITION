@@ -12,7 +12,7 @@ def load_anchors(UwbConfig_path="/home/rsp/UwbProject/UwbConfig/anchors.json"):#
     return anchors
 
 def simulate_ranges(anchors, true_pos, noise_std=100.0):
-    #这里是模拟的 后期改uwb 实际的基站数据巨鹿从这里传进来
+    #这里是模拟的 后期改uwb 实际的基站数据从这里传进来
     """模拟UWB 测距 并且加入高斯噪声10cm的偏移 
     在这里可以抵消掉部分实际上的无人机室内漂移的问题 但还是不完善的 
     如果后期专利的包络面算法引入会有更好的优化空间 会有更好的结果"""
@@ -29,6 +29,8 @@ def main():
     true_pos = np.array([10000.0, 1000.0, 1000.0])  # (x,y,z)
     print("True position:", true_pos)
 
+    #传入实际UWB 基站测距
+    # ranges = get_ranges_from_serial()  # 实时读取UWB硬件数据
     #模拟测距
     ranges = simulate_ranges(anchors, true_pos)
     print("Simulated ranges (mm):", ranges)
