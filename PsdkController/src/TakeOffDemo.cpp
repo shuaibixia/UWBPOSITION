@@ -7,20 +7,20 @@
 int main() {
     T_DjiReturnCode ret;
     T_DjiOsalHandler *osalHandler = DjiPlatform_GetOsalHandler();
-    if (osalHandler == nullptr) {
+    if (osalHandler == nullptr) {   // 获取操作系统抽象层句柄防止为空指针
         std::cout << "Get OSAL handler failed." << std::endl;
         return -1;
     }
 
     // 设置初始位置信息就是飞机的机场位置
-    T_DjiFlightControllerRidInfo ridInfo = {0};
+    T_DjiFlightControllerRidInfo ridInfo = {0};     
     ridInfo.latitude = 22.542812;
     ridInfo.longitude = 113.958902;
     ridInfo.altitude = 0;
 
     // 初始化飞控模块 必须初始化模块 直接调用sample的示例函数和导入库 不获取这个模块是无法使用飞控功能的
     ret = DjiFlightController_Init(ridInfo);
-    if (ret != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {
+    if (ret != DJI_ERROR_SYSTEM_MODULE_CODE_SUCCESS) {   
         USER_LOG_ERROR("Init flight controller failed, errno = 0x%08llX", ret);
         return -1;
     }
