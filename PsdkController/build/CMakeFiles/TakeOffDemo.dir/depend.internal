@@ -3,8 +3,8 @@
 
 CMakeFiles/TakeOffDemo.dir/src/TakeOffDemo.cpp.o
  ../../Payload-SDK-3.11.1/psdk_lib/include/dji_error.h
+ ../../Payload-SDK-3.11.1/psdk_lib/include/dji_flight_controller.h
  ../../Payload-SDK-3.11.1/psdk_lib/include/dji_logger.h
  ../../Payload-SDK-3.11.1/psdk_lib/include/dji_platform.h
  ../../Payload-SDK-3.11.1/psdk_lib/include/dji_typedef.h
  /home/rsp/UwbProject/PsdkController/src/TakeOffDemo.cpp
- /home/rsp/UwbProject/PsdkController/src/dji_sdk_app_info.h

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/rsp/UwbProject/PsdkController/../Payload-SDK-3.11.1/psdk_lib/include -I/home/rsp/UwbProject/PsdkController/../Payload-SDK-3.11.1/samples/sample_c++/platform/linux/manifold2 -I/home/rsp/UwbProject/PsdkController/../Payload-SDK-3.11.1/samples/sample_c++/common
+CXX_INCLUDES = -I/home/rsp/UwbProject/PsdkController/../Payload-SDK-3.11.1/psdk_lib/include -I/home/rsp/UwbProject/PsdkController/../Payload-SDK-3.11.1/include -I/home/rsp/UwbProject/PsdkController/../Payload-SDK-3.11.1/samples/sample_c++/platform/linux/manifold2 -I/home/rsp/UwbProject/PsdkController/../Payload-SDK-3.11.1/samples/sample_c++/platform/linux/manifold2/include -I/home/rsp/UwbProject/PsdkController/../Payload-SDK-3.11.1/samples/sample_c++/common
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++17
 

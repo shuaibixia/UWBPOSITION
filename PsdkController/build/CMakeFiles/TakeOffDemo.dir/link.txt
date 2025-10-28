@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/TakeOffDemo.dir/src/TakeOffDemo.cpp.o -o TakeOffDemo 
+/usr/bin/c++ CMakeFiles/TakeOffDemo.dir/src/TakeOffDemo.cpp.o -o TakeOffDemo  ../../Payload-SDK-3.11.1/psdk_lib/lib/aarch64-linux-gnu-gcc/libpayloadsdk.a -lpthread -lm -ldl 

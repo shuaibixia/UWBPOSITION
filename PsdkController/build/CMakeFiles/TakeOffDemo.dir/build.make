@@ -98,6 +98,7 @@ TakeOffDemo_EXTERNAL_OBJECTS =
 
 TakeOffDemo: CMakeFiles/TakeOffDemo.dir/src/TakeOffDemo.cpp.o
 TakeOffDemo: CMakeFiles/TakeOffDemo.dir/build.make
+TakeOffDemo: ../../Payload-SDK-3.11.1/psdk_lib/lib/aarch64-linux-gnu-gcc/libpayloadsdk.a
 TakeOffDemo: CMakeFiles/TakeOffDemo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rsp/UwbProject/PsdkController/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TakeOffDemo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TakeOffDemo.dir/link.txt --verbose=$(VERBOSE)

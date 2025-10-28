@@ -10,6 +10,10 @@
 stdint.h
 -
 
+../../Payload-SDK-3.11.1/psdk_lib/include/dji_flight_controller.h
+dji_typedef.h
+../../Payload-SDK-3.11.1/psdk_lib/include/dji_typedef.h
+
 ../../Payload-SDK-3.11.1/psdk_lib/include/dji_logger.h
 dji_platform.h
 ../../Payload-SDK-3.11.1/psdk_lib/include/dji_platform.h
@@ -37,16 +41,14 @@ dji_error.h
 ../../Payload-SDK-3.11.1/psdk_lib/include/dji_error.h
 
 /home/rsp/UwbProject/PsdkController/src/TakeOffDemo.cpp
-dji_platform.h
-/home/rsp/UwbProject/PsdkController/src/dji_platform.h
-dji_fc_manager.h
-/home/rsp/UwbProject/PsdkController/src/dji_fc_manager.h
+dji_flight_controller.h
+-
 dji_logger.h
-/home/rsp/UwbProject/PsdkController/src/dji_logger.h
-dji_sdk_app_info.h
-/home/rsp/UwbProject/PsdkController/src/dji_sdk_app_info.h
+-
+dji_platform.h
+-
 unistd.h
 -
-
-/home/rsp/UwbProject/PsdkController/src/dji_sdk_app_info.h
+iostream
+-
 
