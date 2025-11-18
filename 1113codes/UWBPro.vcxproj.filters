@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="csv">
+      <UniqueIdentifier>{77b13a97-1872-45bf-ad89-de52186e665d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pos">
+      <UniqueIdentifier>{6e75360b-91bb-4b0f-a926-57cd34bd4387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vel">
+      <UniqueIdentifier>{31c6159d-e6dc-49d6-a79c-eed8f6afdb92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{686530bd-fdd0-44d3-b103-cc22eab3e234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\lib">
+      <UniqueIdentifier>{df73c7e8-76a1-4bf6-8848-ae0fbe09801c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net\lib\ybase">
+      <UniqueIdentifier>{7504a3db-e5ff-469b-83ac-1b9b7cd09d5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\rcm.c">
+      <Filter>net\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\rcmIf.c">
+      <Filter>net\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\rn.c">
+      <Filter>net\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="pos\posMain.cpp">
+      <Filter>pos</Filter>
+    </ClCompile>
+    <ClCompile Include="vel\velMain.cpp">
+      <Filter>vel</Filter>
+    </ClCompile>
+    <ClCompile Include="csv\csv.cpp">
+      <Filter>csv</Filter>
+    </ClCompile>
+    <ClCompile Include="net\net.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\hostInterfaceCommon.h">
+      <Filter>net\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\hostInterfaceRCM.h">
+      <Filter>net\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\hostInterfaceRN.h">
+      <Filter>net\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\rcm.h">
+      <Filter>net\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\rcmIf.h">
+      <Filter>net\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\rn.h">
+      <Filter>net\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common.h">
+      <Filter>net\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="pos\posMain.h">
+      <Filter>pos</Filter>
+    </ClInclude>
+    <ClInclude Include="vel\velMain.h">
+      <Filter>vel</Filter>
+    </ClInclude>
+    <ClInclude Include="csv\log.h">
+      <Filter>csv</Filter>
+    </ClInclude>
+    <ClInclude Include="csv\csv.h">
+      <Filter>csv</Filter>
+    </ClInclude>
+    <ClInclude Include="net\net.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ybase\buffer.h">
+      <Filter>net\lib\ybase</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ybase\conversion.h">
+      <Filter>net\lib\ybase</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ybase\define.h">
+      <Filter>net\lib\ybase</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ybase\environment.h">
+      <Filter>net\lib\ybase</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ybase\error.h">
+      <Filter>net\lib\ybase</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ybase\exception.h">
+      <Filter>net\lib\ybase</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ybase\log4.h">
+      <Filter>net\lib\ybase</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ybase\singleton.hpp">
+      <Filter>net\lib\ybase</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\ybase\typedef.h">
+      <Filter>net\lib\ybase</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
