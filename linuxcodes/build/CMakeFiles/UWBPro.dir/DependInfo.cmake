@@ -5,9 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/rsp/UwbProject/200codes/lib/rcm.c" "/home/rsp/UwbProject/200codes/build/CMakeFiles/UWBPro.dir/lib/rcm.c.o"
-  "/home/rsp/UwbProject/200codes/lib/rcmIf.c" "/home/rsp/UwbProject/200codes/build/CMakeFiles/UWBPro.dir/lib/rcmIf.c.o"
-  "/home/rsp/UwbProject/200codes/lib/rn.c" "/home/rsp/UwbProject/200codes/build/CMakeFiles/UWBPro.dir/lib/rn.c.o"
+  "/home/rsp/UwbProject/linuxcodes/lib/rcm.c" "/home/rsp/UwbProject/linuxcodes/build/CMakeFiles/UWBPro.dir/lib/rcm.c.o"
+  "/home/rsp/UwbProject/linuxcodes/lib/rcmIf.c" "/home/rsp/UwbProject/linuxcodes/build/CMakeFiles/UWBPro.dir/lib/rcmIf.c.o"
+  "/home/rsp/UwbProject/linuxcodes/lib/rn.c" "/home/rsp/UwbProject/linuxcodes/build/CMakeFiles/UWBPro.dir/lib/rn.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -34,11 +34,11 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../lib/ybase"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rsp/UwbProject/200codes/csv/csv.cpp" "/home/rsp/UwbProject/200codes/build/CMakeFiles/UWBPro.dir/csv/csv.cpp.o"
-  "/home/rsp/UwbProject/200codes/main.cpp" "/home/rsp/UwbProject/200codes/build/CMakeFiles/UWBPro.dir/main.cpp.o"
-  "/home/rsp/UwbProject/200codes/net/net.cpp" "/home/rsp/UwbProject/200codes/build/CMakeFiles/UWBPro.dir/net/net.cpp.o"
-  "/home/rsp/UwbProject/200codes/pos/posMain.cpp" "/home/rsp/UwbProject/200codes/build/CMakeFiles/UWBPro.dir/pos/posMain.cpp.o"
-  "/home/rsp/UwbProject/200codes/vel/velMain.cpp" "/home/rsp/UwbProject/200codes/build/CMakeFiles/UWBPro.dir/vel/velMain.cpp.o"
+  "/home/rsp/UwbProject/linuxcodes/csv/csv.cpp" "/home/rsp/UwbProject/linuxcodes/build/CMakeFiles/UWBPro.dir/csv/csv.cpp.o"
+  "/home/rsp/UwbProject/linuxcodes/main.cpp" "/home/rsp/UwbProject/linuxcodes/build/CMakeFiles/UWBPro.dir/main.cpp.o"
+  "/home/rsp/UwbProject/linuxcodes/net/net.cpp" "/home/rsp/UwbProject/linuxcodes/build/CMakeFiles/UWBPro.dir/net/net.cpp.o"
+  "/home/rsp/UwbProject/linuxcodes/pos/posMain.cpp" "/home/rsp/UwbProject/linuxcodes/build/CMakeFiles/UWBPro.dir/pos/posMain.cpp.o"
+  "/home/rsp/UwbProject/linuxcodes/vel/velMain.cpp" "/home/rsp/UwbProject/linuxcodes/build/CMakeFiles/UWBPro.dir/vel/velMain.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

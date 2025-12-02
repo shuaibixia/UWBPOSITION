@@ -36,14 +36,16 @@ CMakeFiles/UWBPro.dir/main.cpp.o: ../net/net.h
 CMakeFiles/UWBPro.dir/main.cpp.o: ../pos/posMain.h
 CMakeFiles/UWBPro.dir/main.cpp.o: ../vel/velMain.h
 
+CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/ybase/buffer.h
+CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/ybase/define.h
 CMakeFiles/UWBPro.dir/net/net.cpp.o: ../csv/log.h
 CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/common.h
-CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/hostInterfaceCommon.h
-CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/hostInterfaceRCM.h
-CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/hostInterfaceRN.h
-CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/rcm.h
 CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/rcmIf.h
-CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/rn.h
+CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/ybase/buffer.h
+CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/ybase/conversion.h
+CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/ybase/define.h
+CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/ybase/error.h
+CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/ybase/exception.h
 CMakeFiles/UWBPro.dir/net/net.cpp.o: ../lib/ybase/typedef.h
 CMakeFiles/UWBPro.dir/net/net.cpp.o: ../net/net.cpp
 CMakeFiles/UWBPro.dir/net/net.cpp.o: ../net/net.h

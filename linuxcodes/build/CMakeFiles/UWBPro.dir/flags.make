@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_THREAD_DYN_LINK -DLINUX
 
-C_INCLUDES = -I/home/rsp/UwbProject/200codes -I/home/rsp/UwbProject/200codes/csv -I/home/rsp/UwbProject/200codes/net -I/home/rsp/UwbProject/200codes/pos -I/home/rsp/UwbProject/200codes/vel -I/home/rsp/UwbProject/200codes/lib -I/home/rsp/UwbProject/200codes/lib/ybase
+C_INCLUDES = -I/home/rsp/UwbProject/linuxcodes -I/home/rsp/UwbProject/linuxcodes/csv -I/home/rsp/UwbProject/linuxcodes/net -I/home/rsp/UwbProject/linuxcodes/pos -I/home/rsp/UwbProject/linuxcodes/vel -I/home/rsp/UwbProject/linuxcodes/lib -I/home/rsp/UwbProject/linuxcodes/lib/ybase
 
 C_FLAGS =   -UWIN32 -std=gnu11
 
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_LOG_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_THREAD_DYN_LINK -DLINUX
 
-CXX_INCLUDES = -I/home/rsp/UwbProject/200codes -I/home/rsp/UwbProject/200codes/csv -I/home/rsp/UwbProject/200codes/net -I/home/rsp/UwbProject/200codes/pos -I/home/rsp/UwbProject/200codes/vel -I/home/rsp/UwbProject/200codes/lib -I/home/rsp/UwbProject/200codes/lib/ybase
+CXX_INCLUDES = -I/home/rsp/UwbProject/linuxcodes -I/home/rsp/UwbProject/linuxcodes/csv -I/home/rsp/UwbProject/linuxcodes/net -I/home/rsp/UwbProject/linuxcodes/pos -I/home/rsp/UwbProject/linuxcodes/vel -I/home/rsp/UwbProject/linuxcodes/lib -I/home/rsp/UwbProject/linuxcodes/lib/ybase
 
 CXX_FLAGS =   -UWIN32 -std=gnu++11
 
