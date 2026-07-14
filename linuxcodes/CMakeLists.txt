@@ -19,9 +19,6 @@ include_directories(
     ${CMAKE_SOURCE_DIR}/lib/ybase
 )
 
-# Boost
-find_package(Boost REQUIRED COMPONENTS log)
-
 # pthread
 find_package(Threads REQUIRED)
 
@@ -42,7 +39,6 @@ set(SOURCE_FILES
 add_executable(UWBPro ${SOURCE_FILES})
 
 target_link_libraries(UWBPro PRIVATE
-    Boost::log
     Threads::Threads
 )
 

@@ -1,0 +1,12 @@
+[Unit]
+Description=Configure Raspberry Pi 5 PSDK USB BULK gadget
+After=local-fs.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/opt/psdk-usb-gadget/raspi-usb-device-start.sh
+ExecStop=/opt/psdk-usb-gadget/raspi-usb-device-stop.sh
+
+[Install]
+WantedBy=multi-user.target

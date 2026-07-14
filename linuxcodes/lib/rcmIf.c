@@ -118,9 +118,6 @@ int rcmIfInit(rcmIfType ifType, char *destAddr)
             radioAddr.sin_family        = AF_INET;
             radioAddr.sin_port          = htons(RCRM_SOCKET_PORT_NUM);
             radioAddr.sin_addr.s_addr   = radioIpAddr;
-            // & 缺少这条代码 连接失败 
-            int rc = bind (radioFd, 
-                (struct sockaddr_in*)&radioAddr, sizeof(radioAddr));
             break;
 
         case rcmIfSerial:

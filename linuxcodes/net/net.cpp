@@ -1,11 +1,13 @@
 
 #include "net.h"
 #include "../lib/common.h"
+
+#include <sstream>
+
 // #include "../lib/ybase/conversion.h"
 // 这是为了替换掉 conversation.h里面的文件选择 typedef.h中产生同样效果的的类型定义 
-#include "../lib/ybase/typedef.h" 
-#include "../csv/log.h"
-// header only include 用到的.h 就不用cmakelist 里面一个个添加了 
+#include "../lib/ybase/typedef.h"
+// header only include 用到的.h 就不用cmakelist 里面一个个添加了
 #include "../lib/ybase/conversion.h"
 #include "../lib/ybase/buffer.h"
 
@@ -88,7 +90,6 @@ void    netRecv (unsigned char* buf, unsigned int& len)
 //                     << baseId << "," << dist  << ",";
 
 //             printf ("%s\n", (traceLog.str ().c_str()));
-//             BOOST_LOG_TRIVIAL (trace) << (traceLog.str ().c_str());  
 //         }
 //     }
 //     return;

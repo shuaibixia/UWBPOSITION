@@ -1,19 +1,44 @@
-# Python 缓存
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# 数据文件
-Data/
-
-# IDE 配置
-.vscode/
-.idea/
-
-# 系统文件
+# Operating systems and editors
 .DS_Store
 Thumbs.db
+.idea/
+.vscode/
+*.user
 
-# 保留 UwbConfig 文件夹
-!UwbConfig/
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# CMake and native build output
+build/
+**/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+
+# Runtime data and logs
+Data/
+Logs/
+*.log
+*.csv
+
+# Local PSDK packages and credentials
+Payload-SDK-*/
+Payload-SDK-*.zip
+dji_sdk_app_info.h
+*.local.h
+.env
+.env.*
+!.env.example

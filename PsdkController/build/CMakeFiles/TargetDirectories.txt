@@ -1,3 +1,0 @@
-/home/rsp/UwbProject/PsdkController/build/CMakeFiles/rebuild_cache.dir
-/home/rsp/UwbProject/PsdkController/build/CMakeFiles/edit_cache.dir
-/home/rsp/UwbProject/PsdkController/build/CMakeFiles/TakeOffDemo.dir
